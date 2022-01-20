@@ -1,9 +1,9 @@
-import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-
-import { MaterialModule } from './../shared/material/material.module';
+import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
+import { MaterialModule } from '../shared/material/material.module';
+import { RouterModule } from '@angular/router';
+
 
 
 @NgModule({
