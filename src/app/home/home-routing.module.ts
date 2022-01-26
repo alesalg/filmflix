@@ -1,3 +1,4 @@
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { NgModule } from '@angular/core';
 import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
 import { RouterModule, Routes } from '@angular/router';
@@ -17,6 +18,10 @@ const routes: Routes = [
     component: ProfileComponent,
     ...canActivate(redirectUnauthorizedToLogin),
   },
+  {
+    path: 'movie/:id',
+    component: MovieDetailComponent,
+  }
 ];
 
 @NgModule({
